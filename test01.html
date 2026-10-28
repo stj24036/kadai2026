@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>●3534　三浦徹平●</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column; /* ←縦に並べる */
+        align-items: center;     /* 中央寄せ */
+        height: 100vh;
+        margin: 0;
+        background: #f5f5f5;
+        padding-top: 40px;       /* 上に少し余白 */
+      }
+      p {
+        font-size: 2.1em;
+        margin-bottom: 20px;
+      }
+      model-viewer {
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <p>iPhoneの方は右下の小さなアイコンをタップしてください。</p>
+
+    <model-viewer 
+      src="xxxxx.glb"
+      ios-src="xxxxx.usdz"
+      alt="3Dモデル表示"
+      camera-controls
+      auto-rotate
+      ar
+      ar-modes="webxr scene-viewer quick-look">
+    </model-viewer>
+  </body>
+</html>

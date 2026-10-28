@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>●3534　三浦徹平●</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <!-- ① 背景を360度画像にする -->
+      <a-sky src="xxxxx.jpeg"></a-sky>
+
+      <!-- ② 3Dモデルを配置する -->
+      <a-entity 
+        gltf-model="xxxxx.glb"
+        position="0 0 -1"
+        scale="2 2 2"
+        rotation="0 180 0">
+      </a-entity>
+
+      <!-- ③ 光源 -->
+      <a-entity light="type: ambient; intensity: 0.8"></a-entity>
+      <a-entity light="type: directional; intensity: 0.6" position="1 1 1"></a-entity>
+
+      <!-- ④ カメラ操作（マウス・スマホで見回せる） -->
+      <a-entity camera look-controls></a-entity>
+    </a-scene>
+  </body>
+</html>
