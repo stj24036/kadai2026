@@ -17,18 +17,19 @@
 <body>
   <a-scene>
 
-    <!-- 360度背景 -->
+    <!-- ① 背景を360度画像にする -->
     <a-sky src="syoumen.jpg"></a-sky>
 
-    <!-- 光源 -->
+    <!-- ② 光源 -->
     <a-entity light="type: ambient; intensity: 0.8"></a-entity>
+
     <a-entity
       light="type: directional; intensity: 0.6"
       position="1 1 1">
     </a-entity>
 
-    <!-- カメラ：初期視点を90度左にする -->
-    <a-entity rotation="0 -90 0">
+    <!-- ③ カメラ：初期視点を左に90度回転 -->
+    <a-entity rotation="0 90 0">
       <a-entity
         camera
         position="0 1.6 0"
